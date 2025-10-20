@@ -17,6 +17,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material3.Button
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -128,7 +129,12 @@ fun Main(modifier: Modifier = Modifier) {
 
 
         }
-
+        Spacer(modifier = Modifier.size(10.dp))
+        Button(
+            onClick = {}
+        ){
+            Text(text="歡迎修課")
+        }
 
 
     }
