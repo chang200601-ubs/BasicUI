@@ -198,7 +198,7 @@ fun Main(modifier: Modifier = Modifier) {
             Spacer(modifier = Modifier.size(10.dp))
 
             Button(onClick = {
-                mper = MediaPlayer.create(context, R.raw.tcyang) //設定音樂
+                mper = MediaPlayer.create(context, R.raw.fly) //設定音樂
                 mper?.start()
             },
                 modifier = Modifier
