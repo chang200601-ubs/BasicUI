@@ -65,6 +65,7 @@ fun Main(modifier: Modifier = Modifier) {
 
     var AnimalsName = arrayListOf("鴨子","企鵝",
         "青蛙","貓頭鷹","海豚", "牛", "無尾熊", "獅子", "狐狸", "小雞")
+    var flag by remember { mutableStateOf(value="text") }
 
 
     Column (
@@ -135,7 +136,6 @@ fun Main(modifier: Modifier = Modifier) {
         }
         Spacer(modifier = Modifier.size(10.dp))
 
-        var flag by remember { mutableStateOf(value="text") }
         Button(
             onClick = {
                 if(flag=="text"){
@@ -146,10 +146,32 @@ fun Main(modifier: Modifier = Modifier) {
                 }
             }
         ){
-            Text(text="歡迎修課")
+            Text(text="按鈕測試")
         }
 
         Text(text=flag)
+
+        Spacer(modifier = Modifier.size(10.dp))
+        Row{
+            Button(onClick = {
+            }) {
+                Text(text = "歡迎修課")
+            }
+
+            Spacer(modifier = Modifier.size(10.dp))
+
+            Button(onClick = {
+            }) {
+                Text(text = "展翅飛翔")
+            }
+
+            Spacer(modifier = Modifier.size(10.dp))
+
+            Button(onClick = {
+            }) {
+                Text(text = "結束App")
+            }
+        }
 
 
     }
